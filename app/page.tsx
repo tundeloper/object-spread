@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Header/Navigation */}
-      <header className="bg-gradient-to-br from-purple-900 via-slate-900 to-slate-950">
+      <header className="bg-gradient-to-br from-purple-700 via-purple-900 to-slate-950">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <svg className="w-8 h-8 text-purple-500" viewBox="0 0 24 24" fill="currentColor">
@@ -17,7 +17,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-900 via-slate-900 to-slate-950 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-purple-700 via-purple-900 to-slate-950 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
           <div className="relative">
             {/* Publications Card - Left Side */}
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent mb-6 leading-tight">
                 Empowering Independent Researchers
               </h1>
 
