@@ -48,7 +48,7 @@ export default function Home() {
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                 <div className="w-16 h-4 bg-yellow-400/50"></div>
               </div>
-              <div className="font-handwriting text-slate-800 space-y-1" style={{fontFamily: 'cursive'}}>
+              <div className="text-slate-800 space-y-1" style={{fontFamily: 'cursive'}}>
                 <p className="text-base">• Famous Journals</p>
                 <p className="text-base">• Exclusive</p>
                 <p className="text-base">• Intellectuals</p>
@@ -71,7 +71,7 @@ export default function Home() {
 
               {/* Heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Empowering Independent<br />Researchers
+                Empowering Independent Researchers
               </h1>
 
               {/* Subheading */}
@@ -115,7 +115,7 @@ export default function Home() {
 
             {/* Mobile Sticky Note */}
             <div className="lg:hidden mt-6 bg-yellow-300 rounded-sm p-6 shadow-lg">
-              <div className="font-handwriting text-slate-800 space-y-1" style={{fontFamily: 'cursive'}}>
+              <div className="text-slate-800 space-y-1" style={{fontFamily: 'cursive'}}>
                 <p className="text-base">• Famous Journals</p>
                 <p className="text-base">• Exclusive</p>
                 <p className="text-base">• Intellectuals</p>
@@ -146,7 +146,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-              We&apos;re redefining what research<br className="hidden sm:block" /> looks like
+              We&apos;re redefining what research looks like
             </h2>
 
             <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
