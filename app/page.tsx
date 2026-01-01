@@ -3,6 +3,7 @@ import Image from "next/image";
 import objectSpred from '@/app/assets/object spread.png'
 import logoImg from '@/app/assets/logo.png'
 import { useEffect, useRef, } from "react";
+import { Button } from '@/app/Components/ui-costoms';
 
 export default function Home() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-[#05051B]">
+    <div ref={containerRef} className="min-h-screen bg-secondary">
   
       {/* Header/Navigation */}
       <header className="">
@@ -48,9 +49,9 @@ export default function Home() {
             </svg>
             <span className="text-white text-xl font-semibold">ObjectSpread</span> */}
           </div>
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors duration-200">
+          <Button variant="primary" size="md">
             Get Started
-          </button>
+          </Button>
         </nav>
       </header>
 
@@ -106,7 +107,7 @@ export default function Home() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-[63px] sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#AB6AFF] via-[#AB6AFF] to-[#E196FB] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
+              <h1 className="text-[63px] sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-primary to-[#E196FB] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
                 Empowering Independent Researchers
               </h1>
 
@@ -116,12 +117,18 @@ export default function Home() {
               </p>
 
               {/* CTA Button */}
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full flex items-center gap-2 transition-colors duration-200 text-lg font-medium">
+              <Button 
+                variant="primary" 
+                size="lg"
+                icon={
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                }
+                iconPosition="right"
+              >
                 Join the Community
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+              </Button>
             </div>
 
             {/* Mobile Publications Card */}
@@ -129,19 +136,19 @@ export default function Home() {
                 <h3 className="text-white font-semibold mb-3 text-lg">Publications</h3>
                 <ul className="space-y-2 text-sm text-slate-300">
                   <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
                     Recent Research Papers
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
                     Academic Journals
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
                     Case Studies
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
                     White Papers
                   </li>
                 </ul>
@@ -175,7 +182,7 @@ export default function Home() {
               </div>
             </div>
 
-            <p className="text-purple-600 font-medium mb-4 text-sm sm:text-base uppercase tracking-wide">
+            <p className="text-primary font-medium mb-4 text-sm sm:text-base uppercase tracking-wide">
               A new way to explore knowledge
             </p>
 
