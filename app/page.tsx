@@ -3,6 +3,10 @@ import Image from "next/image";
 import objectSpred from '@/app/assets/object spread.png'
 import logoImg from '@/app/assets/logo.png'
 import { useEffect, useRef, } from "react";
+// import { Button } from "@heroui/react";
+import rect from '@/app/assets/Rectangle shadow.svg'
+import right from "@/app/assets/arrow-right.svg";
+import IconButton from "./Components/customs/icon-button";
 
 export default function Home() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -37,6 +41,7 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className="min-h-screen bg-[#05051B]">
+      <Image src={rect} alt="Background Dots" className="fixed inset-0 w-full h-full z-0 pointer-events-none" />  
   
       {/* Header/Navigation */}
       <header className="">
@@ -48,16 +53,14 @@ export default function Home() {
             </svg>
             <span className="text-white text-xl font-semibold">ObjectSpread</span> */}
           </div>
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors duration-200">
-            Get Started
-          </button>
+          <IconButton title="Get in Touch">Get in Touch</IconButton>
         </nav>
       </header>
 
       {/* Hero Section */}
       <section className="overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-          <div className="relative">
+          < div className="relative">
             {/* Publications Card - Left Side */}
             {/* <div className="hidden lg:block absolute left-0 top-20 w-64 bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 shadow-xl">
               <h3 className="text-white font-semibold mb-3 text-lg">Publications</h3>
@@ -106,7 +109,7 @@ export default function Home() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-[63px] sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#AB6AFF] via-[#AB6AFF] to-[#E196FB] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
+              <h1 className="text-[63px] sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-[# ] via-[#AB6AFF] to-[#dca3f0] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
                 Empowering Independent Researchers
               </h1>
 
@@ -116,12 +119,8 @@ export default function Home() {
               </p>
 
               {/* CTA Button */}
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full flex items-center gap-2 transition-colors duration-200 text-lg font-medium">
-                Join the Community
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+              <IconButton title="Join the Community" />
+              
             </div>
 
             {/* Mobile Publications Card */}

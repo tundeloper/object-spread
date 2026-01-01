@@ -23,7 +23,7 @@ const config: Config = {
 			},
 			colors: {
 				primary: {
-					DEFAULT: "#005C9D",
+					DEFAULT: "purple-600",
 					50: "#E6F2FF",
 					100: "#CCE6FF",
 					200: "#99CCFF",
