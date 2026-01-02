@@ -249,8 +249,21 @@ export default function Home() {
               Research Spotlight
             </h1>
             <div className="flex justify-between gap-2">
-            <Image src={sportlight} alt="spotlight" className="max-w-131.75 rounded-lg " />
-            <div className="max-w-[568px]"><h1 className="text-white text-lg font-medium text-[27px]">Pathways to sustainable agriculture in Africa: The role of natural resources, renewable energy, and technological innovation</h1></div>
+              <Image
+                src={sportlight}
+                alt="spotlight"
+                className="max-w-131.75 rounded-lg "
+              />
+              <div className="max-w-[568px]">
+                <h1 className="text-white text-lg font-medium text-[27px]">
+                  Pathways to sustainable agriculture in Africa: The role of
+                  natural resources, renewable energy, and technological
+                  innovation
+                </h1>
+                <span className="text-gray-400">Nov. 2025</span>
+                <p className="text-white mb-5">Agriculture is a significant contributor to greenhouse gas emissions (GHGEs) in Africa, a region highly vulnerable to the impacts of climate change. Rising food demand and expanding cultivation are intensifying the challenge of balancing productivity with environmental sustainability. Although previous studies have examined aggregate CO₂ emissions in resource-dependent economies, limited attention has been given to agriculture-specific emissions and their interactions with renewable energy use, natural resource dependency, and technological innovation. This study addresses this gap by analyzing the determinants of agricultural CO₂ (ACO₂) emissions in 41 African ..</p>
+                <IconButton title="Read more"/>
+              </div>
             </div>
           </div>
         </div>
