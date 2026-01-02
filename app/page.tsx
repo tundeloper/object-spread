@@ -8,6 +8,8 @@ import rect from "@/app/assets/Rectangle shadow.svg";
 import IconButton from "./Components/customs/icon-button";
 // import pattern from "@/app/assets/Pattern Top.svg";
 import Stats from "./Components/stats";
+import Features from "./Components/feature";
+import sportlight from "@/app/assets/spotlight.jpg";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -232,9 +234,24 @@ export default function Home() {
                   Building the Future of Independent Research
                 </h2>
 
-                <p className="max-w-92.75 text-[#353535] text-[16px]">ObjectSpread is a community-driven platform designed to help curious minds become confident researchers. We bring people together to learn, collaborate, and turn ideas into world-class research.</p>
+                <p className="max-w-92.75 text-[#353535] text-[16px]">
+                  ObjectSpread is a community-driven platform designed to help
+                  curious minds become confident researchers. We bring people
+                  together to learn, collaborate, and turn ideas into
+                  world-class research.
+                </p>
               </div>
-            </div> 
+            </div>
+          </div>
+          <Features />
+          <div className="bg-[#05051B] max-w-7xl mx-auto p-12 rounded-3xl">
+            <h1 className="text-2xl font-medium text-white text-[40px] mb-4 ">
+              Research Spotlight
+            </h1>
+            <div className="flex justify-between gap-2">
+            <Image src={sportlight} alt="spotlight" className="max-w-131.75 rounded-lg " />
+            <div className="max-w-[568px]"><h1 className="text-white text-lg font-medium text-[27px]">Pathways to sustainable agriculture in Africa: The role of natural resources, renewable energy, and technological innovation</h1></div>
+            </div>
           </div>
         </div>
       </section>
