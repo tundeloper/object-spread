@@ -198,12 +198,44 @@ export default function Home() {
               </div>
 
               <h2 className="text-3xl sm:text-[40px] max-w-200.75 lg:text-40px font-bold text-[#05051B] mb-6 leading-tight">
-                We&apos;re redefining what research looks like collaborative, open, and accessible to everyone with curiosity and drive. <span className="text-[#828282]">You don&apos;t need titles or institutions.Just passion, commitment, and the right community.</span>
+                We&apos;re redefining what research looks like collaborative,
+                open, and accessible to everyone with curiosity and drive.{" "}
+                <span className="text-[#828282]">
+                  You don&apos;t need titles or institutions.Just passion,
+                  commitment, and the right community.
+                </span>
               </h2>
-
             </div>
           </div>
           <Stats />
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="">
+              {/* Lightbulb Icon */}
+              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-67.25 items-center  justify-center py-1.17 px-[] rounded-full">
+                <div className="w-4 h-4 bg-yellow-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-8 h-8 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
+                  </svg>
+                </div>
+                <p className="text-[#353535] font-medium text-sm sm:text-base">
+                  A new way to explore knowledge
+                </p>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <h2 className="text-3xl sm:text-[40px] max-w-104.5 lg:text-40px font-700 text-[#05051B] mb-6 leading-tight">
+                  Building the Future of Independent Research
+                </h2>
+
+                <p className="max-w-92.75 text-[#353535] text-[16px]">ObjectSpread is a community-driven platform designed to help curious minds become confident researchers. We bring people together to learn, collaborate, and turn ideas into world-class research.</p>
+              </div>
+            </div> 
+          </div>
         </div>
       </section>
     </div>
