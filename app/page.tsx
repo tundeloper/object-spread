@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 // import { Button } from "@heroui/react";
 import rect from "@/app/assets/Rectangle shadow.svg";
 import IconButton from "./Components/customs/icon-button";
-import pattern from "@/app/assets/Pattern Top.svg";
+// import pattern from "@/app/assets/Pattern Top.svg";
 import Stats from "./Components/stats";
 
 export default function Home() {
