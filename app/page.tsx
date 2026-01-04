@@ -10,6 +10,7 @@ import IconButton from "./Components/customs/icon-button";
 import Stats from "./Components/stats";
 import Features from "./Components/feature";
 import sportlight from "@/app/assets/spotlight.jpg";
+import Discoveries from "./Components/Discoveries/discoveries";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -266,6 +267,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <Discoveries />
         </div>
       </section>
     </div>
