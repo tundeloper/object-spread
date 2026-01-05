@@ -53,7 +53,7 @@ export default function Home() {
 
       {/* Header/Navigation */}
       <header className="">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto py-12 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src={objectSpred} alt="Object Spread Logo" />
             {/* <svg className="w-8 h-8 text-purple-500" viewBox="0 0 24 24" fill="currentColor">
@@ -212,10 +212,10 @@ export default function Home() {
           </div>
           <Stats />
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
             <div className="">
               {/* Lightbulb Icon */}
-              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-67.25 items-center  justify-center py-1.17 px-[] rounded-full">
+              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-33.25 items-center  justify-center py-1.17 px-[] rounded-full">
                 <div className="w-4 h-4 bg-yellow-100 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-yellow-500"
@@ -226,7 +226,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="text-[#353535] font-medium text-sm sm:text-base">
-                  A new way to explore knowledge
+                  What we do
                 </p>
               </div>
 

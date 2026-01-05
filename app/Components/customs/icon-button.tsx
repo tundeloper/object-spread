@@ -1,16 +1,15 @@
 import { Button, ButtonProps, } from "@heroui/react";
-import { Exempt } from "../../utils/type";
+// import { Exempt } from "../../utils/type";
 import Image from "next/image";
-import { IconProps } from "./icon";
+// import { IconProps } from "./icon";
 import right from "@/app/assets/arrow-right.svg";
 import { ReactNode } from "react";
 
 export type IconButtonProps = ButtonProps & {
-        iconProps?: Exempt<IconProps, "name"> & {
+        // iconProps?: Exempt<IconProps, "name"> & {
         title?: ReactNode;
 		position?: "start" | "end";
 	};
-};
 
 export default function IconButton({
 	title,

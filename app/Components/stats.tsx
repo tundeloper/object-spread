@@ -1,6 +1,6 @@
 export default function Stats() {
   return (
-    <section className="w-full max-w-5xl mx-auto px-4 py-10">
+    <section className="w-full max-w-7xl mx-auto py-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Card 1 */}
