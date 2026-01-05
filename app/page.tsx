@@ -11,6 +11,8 @@ import Stats from "./Components/stats";
 import Features from "./Components/feature";
 import sportlight from "@/app/assets/spotlight.jpg";
 import Discoveries from "./Components/Discoveries/discoveries";
+import ResearchCTA from "./Components/ReserchCTA";
+import Footer from "./Components/footer";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -48,7 +50,7 @@ export default function Home() {
       <Image
         src={rect}
         alt="Background Dots"
-        className="fixed inset-0 w-full h-full z-0 pointer-events-none"
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
       />
 
       {/* Header/Navigation */}
@@ -178,11 +180,11 @@ export default function Home() {
       {/* Content Section */}
       <section className="bg-[#05051B] relative z-10">
         <div
-          className="bg-white rounded-t-[60px] relative overflow-hidden bg-top bg-no-repeat"
+          className="bg-white rounded-t-[60px] relative overflow-hidden bg-top bg-auto bg-no-repeat w-full"
           style={{ backgroundImage: "url(/Pattern-top.svg)" }}
         >
           {/* <Image src={pattern} alt="pattern"  className="fixed inset-0 w-full h-full z-0 pointer-events-none" /> */}
-          <div className="max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
             <div className="">
               {/* Lightbulb Icon */}
               <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-67.25 items-center  justify-center py-1.17 px-[] rounded-full">
@@ -262,12 +264,27 @@ export default function Home() {
                   innovation
                 </h1>
                 <p className="text-gray-400 my-4">Nov. 2025</p>
-                <p className="text-white mb-5">Agriculture is a significant contributor to greenhouse gas emissions (GHGEs) in Africa, a region highly vulnerable to the impacts of climate change. Rising food demand and expanding cultivation are intensifying the challenge of balancing productivity with environmental sustainability. Although previous studies have examined aggregate CO₂ emissions in resource-dependent economies, limited attention has been given to agriculture-specific emissions and their interactions with renewable energy use, natural resource dependency, and technological innovation. This study addresses this gap by analyzing the determinants of agricultural CO₂ (ACO₂) emissions in 41 African ..</p>
-                <IconButton title="Read more"/>
+                <p className="text-white mb-5">
+                  Agriculture is a significant contributor to greenhouse gas
+                  emissions (GHGEs) in Africa, a region highly vulnerable to the
+                  impacts of climate change. Rising food demand and expanding
+                  cultivation are intensifying the challenge of balancing
+                  productivity with environmental sustainability. Although
+                  previous studies have examined aggregate CO₂ emissions in
+                  resource-dependent economies, limited attention has been given
+                  to agriculture-specific emissions and their interactions with
+                  renewable energy use, natural resource dependency, and
+                  technological innovation. This study addresses this gap by
+                  analyzing the determinants of agricultural CO₂ (ACO₂)
+                  emissions in 41 African ..
+                </p>
+                <IconButton title="Read more" />
               </div>
             </div>
           </div>
           <Discoveries />
+          <ResearchCTA />
+          <Footer />
         </div>
       </section>
     </div>

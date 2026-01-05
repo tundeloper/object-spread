@@ -15,8 +15,8 @@ export default function IconButton({
 	title,
 }: IconButtonProps) {
 	return (
-		<Button title={title}  className="bg-[#342787] hover:bg-[#4F367C85] text-white cursor-pointer px-3 pr-1 py-0.75 rounded-full transition-colors duration-200 flex gap-3" endContent={
-                    <Image src={right} alt="Object Spread Logo"   />
+		<Button title={title}  className="bg-[#342787] group hover:bg-[#4F367C85] text-white cursor-pointer px-3 pr-1 py-0.75 rounded-full transition-colors duration-200 flex gap-3" endContent={
+                    <Image src={right} alt="Object Spread Logo group-hover:translate-x-1"   />
                   }>{title}</Button>
 	);
 }
