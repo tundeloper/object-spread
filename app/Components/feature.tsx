@@ -2,7 +2,6 @@ export default function Features() {
   return (
     <section className="max-w-7xl mx-auto py-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-
         {/* Image 1 */}
         <div
           className="rounded-lg overflow-hidden bg-cover bg-center h-80"
@@ -94,9 +93,9 @@ export default function Features() {
               Access Funding Opportunities
             </h3>
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Research shouldn&apos;t stop because of lack of resources. We connect
-              researchers with grants, sponsors, and funding options that help
-              bring important ideas to life.
+              Research shouldn&apos;t stop because of lack of resources. We
+              connect researchers with grants, sponsors, and funding options
+              that help bring important ideas to life.
             </p>
           </div>
           <a
@@ -111,7 +110,6 @@ export default function Features() {
           className="rounded-lg overflow-hidden bg-cover bg-center h-80"
           style={{ backgroundImage: "url('/images/feature-4.jpg')" }}
         />
-
       </div>
     </section>
   );
