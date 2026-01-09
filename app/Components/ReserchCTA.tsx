@@ -16,7 +16,7 @@ const ResearchCTA = () => {
           journey?
         </h1>
 
-        <p className="mt-4 max-w-xl text-sm text-white/80 md:text-base">
+        <p className="mt-4 max-w-xl text-sm text-white/80 md:text-base mb-4">
           Join a community built for thinkers, dreamers, and problem-solvers.
         </p>
 
