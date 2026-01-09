@@ -1,3 +1,5 @@
+import IconButton from "./customs/icon-button";
+
 const ResearchCTA = () => {
   return (
     <section className="relative w-full overflow-hidden rounded-t-[60px] bg-[#05051B] ">
@@ -18,12 +20,13 @@ const ResearchCTA = () => {
           Join a community built for thinkers, dreamers, and problem-solvers.
         </p>
 
-        <button className="group mt-10 flex items-center gap-3 rounded-full bg-violet-500 px-6 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-violet-400">
+        <IconButton title="Get in Touch" />
+        {/* <button className="group mt-10 flex items-center gap-3 rounded-full bg-violet-500 px-6 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-violet-400">
           Get in Touch
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-violet-600 transition group-hover:translate-x-1">
             →
           </span>
-        </button>
+        </button> */}
       </div>
     </section>
   );
