@@ -20,27 +20,47 @@ export default function Card({
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
 
-        <span className="absolute top-3 left-3 text-xs px-3 py-1 rounded-full bg-black/50 text-white backdrop-blur">
+        {/* Tag */}
+        {/* <AppleButton>
+        {tag}
+      </AppleButton> */}
+        <span
+          className="absolute top-3 left-3 inline-flex items-center justify-center
+    px-4 py-1.5
+    rounded-full
+    text-sm font-medium
+    select-none
+    text-white
+    transition-all duration-300
+    backdrop-blur-md
+    bg-white/10
+    border border-white/20
+    shadow-[inset_0_0_0_0.5px_rgba(255, 255, 255, 0.35),_0_1px_2px_rgba(0,0,0,0.25)]
+    hover:bg-white/15
+    active:bg-white/20
+"
+        >
           {tag}
         </span>
       </div>
 
       {/* Content */}
       <div className="mt-4">
-        <h3 className="font-semibold text-gray-900 leading-snug group-hover:text-purple-600 transition">
+        <h3
+          className=" font-semibold leading-snug text-gray-900
+      transition duration-300
+      group-hover:bg-linear-to-r group-hover:from-[#E196FB] group-hover:to-[#9848FF]
+      group-hover:bg-clip-text group-hover:text-transparent"
+        >
           {title}
         </h3>
 
         <p className="text-sm text-gray-500 mt-2">{date}</p>
 
         <div className="flex items-center gap-2 mt-3">
-          <Image
-            src={avatar}
-            alt={author}
-            width={28}
-            height={28}
-            className="rounded-full"
-          />
+          <div className="w-7 h-7 rounded-full overflow-hidden">
+            <Image src={avatar} alt={author} width={28} height={28} />
+          </div>
           <span className="text-sm text-gray-700">{author}</span>
         </div>
       </div>

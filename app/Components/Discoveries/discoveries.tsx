@@ -38,16 +38,16 @@ export default function Discoveries() {
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-2 mt-10">
+      <div className="flex flex-wrap justify-center gap-2 mt-10 bg-[#F8F8F8] rounded-full p-3 w-fit mx-auto">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => handleTabChange(tab)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition
+            className={`px-4 py-2 rounded-full text-sm font-medium transition cursor-pointer
               ${
                 activeTab === tab
-                  ? "bg-purple-500 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-linear-to-r from-[#9848FF] to-[#E196FB] group hover:bg-[#9848FF] text-white"
+                  : "bg-[#F0F0F0] text-gray-600 hover:bg-[#E6E6E6]"
               }`}
           >
             {tab}

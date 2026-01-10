@@ -3,10 +3,8 @@ import Image from "next/image";
 import objectSpred from "@/app/assets/object spread.png";
 import logoImg from "@/app/assets/logo.png";
 import { useEffect, useRef } from "react";
-// import { Button } from "@heroui/react";
 import rect from "@/app/assets/Rectangle shadow.svg";
 import IconButton from "./Components/customs/icon-button";
-// import pattern from "@/app/assets/Pattern Top.svg";
 import Stats from "./Components/stats";
 import Features from "./Components/feature";
 import sportlight from "@/app/assets/spotlight.jpg";
@@ -46,11 +44,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-[#05051B]">
+    <div ref={containerRef} className="relative min-h-screen bg-[#05051B]">
       <Image
         src={rect}
         alt="Background Dots"
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+        className="hidden sm:block absolute inset-0 w-full h-full z-0 pointer-events-none"
       />
 
       {/* Header/Navigation */}
@@ -69,46 +67,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 sm:py-20 lg:py-32 relative z-10">
           <div className="relative">
-            {/* Publications Card - Left Side */}
-            {/* <div className="hidden lg:block absolute left-0 top-20 w-64 bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 shadow-xl">
-              <h3 className="text-white font-semibold mb-3 text-lg">Publications</h3>
-              <ul className="space-y-2 text-sm text-slate-300">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Recent Research Papers
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Academic Journals
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Case Studies
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  White Papers
-                </li>
-              </ul>
-            </div> */}
-
-            {/* Sticky Note - Right Side */}
-            {/* <div className="hidden lg:block absolute right-0 top-20 w-64 bg-yellow-300 rounded-sm p-6 shadow-lg transform rotate-2">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
-                <div className="w-16 h-4 bg-yellow-400/50"></div>
-              </div>
-              <div className="text-slate-800 space-y-1" style={{fontFamily: 'cursive'}}>
-                <p className="text-base">• Famous Journals</p>
-                <p className="text-base">• Exclusive</p>
-                <p className="text-base">• Intellectuals</p>
-                <p className="text-base">• Researchers</p>
-                <p className="text-base">• Scholars</p>
-                <p className="text-base">• Fun etc.</p>
-              </div>
-            </div> */}
-
             {/* Center Content */}
             <div className="flex flex-col items-center text-center px-4 sm:px-8 lg:px-16">
               {/* Logo Icon */}
@@ -119,7 +79,7 @@ export default function Home() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-[#AB6AFF] via-[#AB6AFF] to-[#dca3f0] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl sm:font-semibold bg-linear-to-r from-[#AB6AFF] via-[#AB6AFF] to-[#dca3f0] max-w-3xl bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
                 Empowering Independent Researchers
               </h1>
 
@@ -133,62 +93,27 @@ export default function Home() {
               {/* CTA Button */}
               <IconButton title="Join the Community" />
             </div>
-
-            {/* Mobile Publications Card */}
-            {/* <div className="lg:hidden mt-12 bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 shadow-xl">
-              <h3 className="text-white font-semibold mb-3 text-lg">
-                Publications
-              </h3>
-              <ul className="space-y-2 text-sm text-slate-300">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Recent Research Papers
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Academic Journals
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Case Studies
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  White Papers
-                </li>
-              </ul>
-            </div> */}
-
-            {/* Mobile Sticky Note */}
-            {/* <div className="lg:hidden mt-6 bg-yellow-300 rounded-sm p-6 shadow-lg">
-              <div
-                className="text-slate-800 space-y-1"
-                style={{ fontFamily: "cursive" }}
-              >
-                <p className="text-base">• Famous Journals</p>
-                <p className="text-base">• Exclusive</p>
-                <p className="text-base">• Intellectuals</p>
-                <p className="text-base">• Researchers</p>
-                <p className="text-base">• Scholars</p>
-                <p className="text-base">• Fun etc.</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
+      
+      <div className="hidden relative max-w-8xl mx-auto -mb-45 h-100 w-full lg:block">
+      <Image src="/publications.svg"  height={200} width={200} alt="pattern" className="absolute bottom-35 left-7 w-auto h-auto z-10 pointer-events-none" />
+      <Image src="/research.svg"  height={200} width={200} alt="pattern" className="absolute bottom-10 right-7 w-auto h-auto z-20 pointer-events-none" />
+      </div>
 
       {/* Content Section */}
       <section className="bg-[#05051B] relative z-10">
         <div
-          className="bg-white rounded-t-[60px] relative overflow-hidden bg-top bg-auto bg-no-repeat w-full"
+          className="h-50 bg-cover bg-white pt-2 lg:pt-8 rounded-t-[20px] lg:rounded-t-[60px] bg-top bg-no-repeat"
           style={{ backgroundImage: "url(/Pattern-top.svg)" }}
         >
           {/* <Image src={pattern} alt="pattern"  className="fixed inset-0 w-full h-full z-0 pointer-events-none" /> */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="">
               {/* Lightbulb Icon */}
-              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-full sm:max-w-md items-center justify-center py-1.5 px-3 rounded-full">
-                <div className="w-4 h-4 bg-yellow-100 rounded-full flex items-center justify-center">
+              <div className="flex gap-1 mt-0 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-full sm:max-w-fit items-center justify-center py-1.5 px-3 rounded-full">
+                <div className="w-4 h-4  bg-yellow-100 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-yellow-500"
                     fill="currentColor"
@@ -202,7 +127,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl max-w-full lg:max-w-5xl font-bold text-[#05051B] mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl max-w-full lg:max-w-200.75 text-[#05051B] mb-6 leading-tight">
                 We&apos;re redefining what research looks like collaborative,
                 open, and accessible to everyone with curiosity and drive.{" "}
                 <span className="text-[#828282]">
@@ -217,7 +142,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="">
               {/* Lightbulb Icon */}
-              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-full sm:max-w-xs items-center justify-center py-1.5 px-3 rounded-full">
+              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-full sm:max-w-xs items-center justify-center py-1.5 px-3 rounded-full lg:max-w-fit">
                 <div className="w-4 h-4 bg-yellow-100 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-yellow-500"

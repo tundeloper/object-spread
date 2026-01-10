@@ -4,7 +4,7 @@ export default function Stats() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card 1 */}
         <div
-          className="relative rounded-2xl overflow-hidden text-white min-h-[280px]"
+          className="relative rounded-2xl overflow-hidden text-white min-h-70"
           style={{
             backgroundImage: "url('/images/researcher.jpg')",
             backgroundSize: "cover",

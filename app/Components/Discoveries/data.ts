@@ -7,7 +7,7 @@ export const cards: CardProps[] = [
     date: "November 2025",
     author: "Nazir Muhammad Abdullahi",
     image: "/images/feature-1.jpg",
-    avatar: "next.svg",
+    avatar: "/images/user.jpg",
   },
   {
     tag: "Article",
@@ -15,7 +15,7 @@ export const cards: CardProps[] = [
     date: "August 2025",
     author: "Hamdy A. Hassan",
     image: "/images/feature-2.png",
-    avatar: "/next.svg",
+    avatar: "/images/user.jpg",
   },
   {
     tag: "Report",
@@ -23,7 +23,7 @@ export const cards: CardProps[] = [
     date: "November 2025",
     author: "Oksana Kiforenko",
     image: "/images/feature-3.jpg",
-    avatar: "next.svg",
+    avatar: "/images/user.jpg",
   },
   {
     tag: "Article",
@@ -31,7 +31,7 @@ export const cards: CardProps[] = [
     date: "October 2025",
     author: "Federico Tadei",
     image: "/images/feature-4.jpg",
-    avatar: "next.svg",
+    avatar: "/images/user.jpg",
   },
   {
     tag: "Article",
@@ -39,7 +39,7 @@ export const cards: CardProps[] = [
     date: "November 2025",
     author: "André-Ledoux Njouonkou",
     image: "/images/researcher.jpg",
-    avatar: "next.svg",
+    avatar: "/images/user.jpg",
   },
   {
     tag: "Article",
@@ -47,6 +47,6 @@ export const cards: CardProps[] = [
     date: "November 2025",
     author: "José Cossa",
     image: "/images/feature-4.jpg",
-    avatar: "next.svg",
+    avatar: "/images/user.jpg",
   },
 ];
