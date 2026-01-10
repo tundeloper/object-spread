@@ -1,7 +1,7 @@
 export default function Features() {
   return (
-    <section className="max-w-7xl mx-auto py-16">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Image 1 */}
         <div
           className="rounded-lg overflow-hidden bg-cover bg-center h-80"
@@ -61,12 +61,12 @@ export default function Features() {
         /> */}
 
         {/* Text 3 */}
-        <div className="rounded-lg bg-[#FAF7FB] p-4 flex flex-col justify-between">
+        <div className="rounded-lg bg-[#FAF7FB] p-4 sm:p-6 flex flex-col justify-between min-h-[256px] sm:min-h-[288px] lg:min-h-[320px]">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
               Publish Your Research Internationally
             </h3>
-            <p className="text-gray-600 mt-4 leading-relaxed">
+            <p className="text-gray-600 mt-3 sm:mt-4 leading-relaxed text-sm sm:text-base">
               Your work deserves to be seen. We provide support to help you
               produce strong, publication-ready papers and share them through
               reputable international journals.
@@ -74,7 +74,7 @@ export default function Features() {
           </div>
           <a
             href="#"
-            className="mt-6 inline-flex items-center gap-2 text-purple-600 font-medium"
+            className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-purple-600 font-medium hover:gap-3 transition-all min-h-[44px] py-2"
           >
             Seek Publishing Support <span>→</span>
           </a>
@@ -82,17 +82,17 @@ export default function Features() {
 
         {/* Image 4 */}
         <div
-          className="rounded-lg overflow-hidden bg-cover bg-center h-80"
+          className="rounded-lg overflow-hidden bg-cover bg-center h-64 sm:h-72 lg:h-80"
           style={{ backgroundImage: "url('/images/feature-3.jpg')" }}
         />
 
         {/* Text 4 */}
-        <div className="rounded-lg bg-[#FAF7FB] p-4 flex flex-col justify-between">
+        <div className="rounded-lg bg-[#FAF7FB] p-4 sm:p-6 flex flex-col justify-between min-h-[256px] sm:min-h-[288px] lg:min-h-[320px]">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
               Access Funding Opportunities
             </h3>
-            <p className="text-gray-600 mt-4 leading-relaxed">
+            <p className="text-gray-600 mt-3 sm:mt-4 leading-relaxed text-sm sm:text-base">
               Research shouldn&apos;t stop because of lack of resources. We
               connect researchers with grants, sponsors, and funding options
               that help bring important ideas to life.
@@ -100,14 +100,14 @@ export default function Features() {
           </div>
           <a
             href="#"
-            className="mt-6 inline-flex items-center gap-2 text-purple-600 font-medium"
+            className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-purple-600 font-medium hover:gap-3 transition-all min-h-[44px] py-2"
           >
             Access Funding <span>→</span>
           </a>
         </div>
 
         <div
-          className="rounded-lg overflow-hidden bg-cover bg-center h-80"
+          className="rounded-lg overflow-hidden bg-cover bg-center h-64 sm:h-72 lg:h-80"
           style={{ backgroundImage: "url('/images/feature-4.jpg')" }}
         />
       </div>

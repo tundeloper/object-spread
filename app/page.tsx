@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* Header/Navigation */}
       <header className="">
-        <nav className="max-w-7xl mx-auto py-12 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src={objectSpred} alt="Object Spread Logo" />
             {/* <svg className="w-8 h-8 text-purple-500" viewBox="0 0 24 24" fill="currentColor">
@@ -110,7 +110,7 @@ export default function Home() {
             </div> */}
 
             {/* Center Content */}
-            <div className="flex flex-col items-center text-center lg:px-32">
+            <div className="flex flex-col items-center text-center px-4 sm:px-8 lg:px-16">
               {/* Logo Icon */}
               <div className="mb-8">
                 <div className="w-20 h-20 flex items-center justify-center shadow-lg">
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-[63px] sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-[#AB6AFF] via-[#AB6AFF] to-[#dca3f0] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-[#AB6AFF] via-[#AB6AFF] to-[#dca3f0] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] mb-6 leading-tight">
                 Empowering Independent Researchers
               </h1>
 
@@ -184,10 +184,10 @@ export default function Home() {
           style={{ backgroundImage: "url(/Pattern-top.svg)" }}
         >
           {/* <Image src={pattern} alt="pattern"  className="fixed inset-0 w-full h-full z-0 pointer-events-none" /> */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="">
               {/* Lightbulb Icon */}
-              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-67.25 items-center  justify-center py-1.17 px-[] rounded-full">
+              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-full sm:max-w-md items-center justify-center py-1.5 px-3 rounded-full">
                 <div className="w-4 h-4 bg-yellow-100 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-yellow-500"
@@ -202,7 +202,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <h2 className="text-3xl sm:text-[40px] max-w-200.75 lg:text-40px font-bold text-[#05051B] mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl max-w-full lg:max-w-5xl font-bold text-[#05051B] mb-6 leading-tight">
                 We&apos;re redefining what research looks like collaborative,
                 open, and accessible to everyone with curiosity and drive.{" "}
                 <span className="text-[#828282]">
@@ -214,10 +214,10 @@ export default function Home() {
           </div>
           <Stats />
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="">
               {/* Lightbulb Icon */}
-              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-33.25 items-center  justify-center py-1.17 px-[] rounded-full">
+              <div className="flex gap-1 mt-8 mb-4 bg-linear-to-b from-[#E6E6E6] via-[#FFFFFF] to-[#E6E6E6] max-w-full sm:max-w-xs items-center justify-center py-1.5 px-3 rounded-full">
                 <div className="w-4 h-4 bg-yellow-100 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-yellow-500"
@@ -232,12 +232,12 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-between">
-                <h2 className="text-3xl sm:text-[40px] max-w-104.5 lg:text-40px font-700 text-[#05051B] mb-6 leading-tight">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl max-w-full lg:max-w-2xl font-bold text-[#05051B] leading-tight">
                   Building the Future of Independent Research
                 </h2>
 
-                <p className="max-w-92.75 text-[#353535] text-[16px]">
+                <p className="max-w-full lg:max-w-md text-[#353535] text-sm sm:text-base">
                   ObjectSpread is a community-driven platform designed to help
                   curious minds become confident researchers. We bring people
                   together to learn, collaborate, and turn ideas into
@@ -247,18 +247,18 @@ export default function Home() {
             </div>
           </div>
           <Features />
-          <div className="bg-[#05051B] max-w-7xl mx-auto p-12 rounded-3xl">
-            <h1 className="text-2xl font-medium text-white text-[40px] mb-4 ">
+          <div className="bg-[#05051B] max-w-7xl mx-auto p-4 sm:p-6 lg:p-12 rounded-3xl">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-4 sm:mb-6">
               Research Spotlight
             </h1>
-            <div className="flex justify-between gap-2">
+            <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-6">
               <Image
                 src={sportlight}
                 alt="spotlight"
-                className="max-w-131.75 rounded-lg "
+                className="w-full lg:w-1/2 rounded-lg object-cover"
               />
-              <div className="max-w-142">
-                <h1 className="text-white text-lg font-medium text-[27px]">
+              <div className="w-full lg:w-1/2">
+                <h1 className="text-white text-xl sm:text-2xl font-medium">
                   Pathways to sustainable agriculture in Africa: The role of
                   natural resources, renewable energy, and technological
                   innovation
