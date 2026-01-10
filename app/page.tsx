@@ -105,7 +105,7 @@ export default function Home() {
       {/* Content Section */}
       <section className="bg-[#05051B] relative z-10">
         <div
-          className="h-50 bg-cover bg-white pt-2 lg:pt-8 rounded-t-[20px] lg:rounded-t-[60px] bg-top bg-no-repeat"
+          className="h-80 bg-cover bg-white pt-2 lg:pt-8 rounded-t-[20px] lg:rounded-t-[60px] bg-top bg-no-repeat"
           style={{ backgroundImage: "url(/Pattern-top.svg)" }}
         >
           {/* <Image src={pattern} alt="pattern"  className="fixed inset-0 w-full h-full z-0 pointer-events-none" /> */}
