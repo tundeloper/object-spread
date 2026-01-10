@@ -10,13 +10,13 @@ const ResearchCTA = () => {
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20" />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-105 flex-col items-center justify-center px-6 text-center">
-        <h1 className="max-w-219.75 text-4xl font-medium leading-tight text-white md:text-5xl lg:text-6xl">
+      <div className="relative z-10 flex min-h-[420px] sm:min-h-[480px] lg:min-h-[560px] flex-col items-center justify-center px-4 sm:px-6 text-center">
+        <h1 className="max-w-full sm:max-w-2xl lg:max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-white">
           Ready to begin your research <br className="hidden md:block" />
           journey?
         </h1>
 
-        <p className="mt-4 max-w-xl text-sm text-white/80 md:text-base mb-4">
+        <p className="mt-4 sm:mt-6 max-w-xl text-sm sm:text-base text-white/80 mb-4 sm:mb-6">
           Join a community built for thinkers, dreamers, and problem-solvers.
         </p>
 

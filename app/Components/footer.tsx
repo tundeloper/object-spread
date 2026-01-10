@@ -8,7 +8,7 @@ const Footer = () => {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-14 md:grid-cols-4">
+        <div className="grid gap-8 sm:gap-10 md:gap-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-xl font-semibold">
@@ -32,9 +32,9 @@ const Footer = () => {
               ].map(({ Icon }, i) => (
                 <div
                   key={i}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20"
+                  className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20 cursor-pointer"
                 >
-                  <Icon size={16} />
+                  <Icon size={18} />
                 </div>
               ))}
             </div>
@@ -42,36 +42,36 @@ const Footer = () => {
 
           {/* Quicklinks */}
           <div>
-            <h4 className="mb-4 text-sm font-medium">Quicklinks</h4>
+            <h4 className="mb-4 text-sm sm:text-base font-medium">Quicklinks</h4>
             <ul className="space-y-3 text-sm text-white/70">
-              <li>About</li>
-              <li>Publications</li>
-              <li>Join the Community</li>
-              <li>Contact</li>
+              <li className="cursor-pointer hover:text-white transition">About</li>
+              <li className="cursor-pointer hover:text-white transition">Publications</li>
+              <li className="cursor-pointer hover:text-white transition">Join the Community</li>
+              <li className="cursor-pointer hover:text-white transition">Contact</li>
             </ul>
           </div>
 
           {/* Programs */}
           <div>
-            <h4 className="mb-4 text-sm font-medium">Programs</h4>
+            <h4 className="mb-4 text-sm sm:text-base font-medium">Programs</h4>
             <ul className="space-y-3 text-sm text-white/70">
-              <li>Research Cohorts</li>
-              <li>Mentorship Program</li>
-              <li>Publishing Support</li>
-              <li>Funding Opportunities</li>
+              <li className="cursor-pointer hover:text-white transition">Research Cohorts</li>
+              <li className="cursor-pointer hover:text-white transition">Mentorship Program</li>
+              <li className="cursor-pointer hover:text-white transition">Publishing Support</li>
+              <li className="cursor-pointer hover:text-white transition">Funding Opportunities</li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 text-sm font-medium">Contact us</h4>
+            <h4 className="mb-4 text-sm sm:text-base font-medium">Contact us</h4>
             <div className="space-y-4 text-sm text-white/70">
               <div className="flex items-center gap-3">
-                <Mail size={16} />
-                objectspread@email.com
+                <Mail size={18} />
+                <span className="break-all">objectspread@email.com</span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone size={16} />
+                <Phone size={18} />
                 +2348012345678
               </div>
             </div>
