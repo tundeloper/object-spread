@@ -47,7 +47,7 @@ export default function Card({
       {/* Content */}
       <div className="mt-4">
         <h3
-          className=" font-semibold leading-snug text-gray-900
+          className=" font-semibold leading-snug text-[#05051B]
       transition duration-300
       group-hover:bg-linear-to-r group-hover:from-[#E196FB] group-hover:to-[#9848FF]
       group-hover:bg-clip-text group-hover:text-transparent"
@@ -55,13 +55,13 @@ export default function Card({
           {title}
         </h3>
 
-        <p className="text-sm text-gray-500 mt-2">{date}</p>
+        <p className="text-sm text-[#828282] mt-2">{date}</p>
 
         <div className="flex items-center gap-2 mt-3">
           <div className="w-7 h-7 rounded-full overflow-hidden">
             <Image src={avatar} alt={author} width={28} height={28} />
           </div>
-          <span className="text-sm text-gray-700">{author}</span>
+          <span className="text-sm text-[#353535]">{author}</span>
         </div>
       </div>
     </div>

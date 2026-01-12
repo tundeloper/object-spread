@@ -1,4 +1,6 @@
 import { Facebook, Linkedin, Instagram, X, Mail, Phone } from "lucide-react";
+import Image from "next/image";
+import logo from "@/app/assets/log.png";
 
 const Footer = () => {
   return (
@@ -12,10 +14,9 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-xl font-semibold">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-violet-500/20">
-                ⬤
-              </span>
-              ObjectSpread
+                {/* ⬤ */}
+                <Image src={logo} alt="Logo" width={24} height={24} />
+              <p className="font-semibold">Object<span className="font-normal">Spread</span></p>
             </div>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
@@ -42,12 +43,22 @@ const Footer = () => {
 
           {/* Quicklinks */}
           <div>
-            <h4 className="mb-4 text-sm sm:text-base font-medium">Quicklinks</h4>
+            <h4 className="mb-4 text-sm sm:text-base font-medium">
+              Quicklinks
+            </h4>
             <ul className="space-y-3 text-sm text-white/70">
-              <li className="cursor-pointer hover:text-white transition">About</li>
-              <li className="cursor-pointer hover:text-white transition">Publications</li>
-              <li className="cursor-pointer hover:text-white transition">Join the Community</li>
-              <li className="cursor-pointer hover:text-white transition">Contact</li>
+              <li className="cursor-pointer hover:text-white transition">
+                About
+              </li>
+              <li className="cursor-pointer hover:text-white transition">
+                Publications
+              </li>
+              <li className="cursor-pointer hover:text-white transition">
+                Join the Community
+              </li>
+              <li className="cursor-pointer hover:text-white transition">
+                Contact
+              </li>
             </ul>
           </div>
 
@@ -55,16 +66,26 @@ const Footer = () => {
           <div>
             <h4 className="mb-4 text-sm sm:text-base font-medium">Programs</h4>
             <ul className="space-y-3 text-sm text-white/70">
-              <li className="cursor-pointer hover:text-white transition">Research Cohorts</li>
-              <li className="cursor-pointer hover:text-white transition">Mentorship Program</li>
-              <li className="cursor-pointer hover:text-white transition">Publishing Support</li>
-              <li className="cursor-pointer hover:text-white transition">Funding Opportunities</li>
+              <li className="cursor-pointer hover:text-white transition">
+                Research Cohorts
+              </li>
+              <li className="cursor-pointer hover:text-white transition">
+                Mentorship Program
+              </li>
+              <li className="cursor-pointer hover:text-white transition">
+                Publishing Support
+              </li>
+              <li className="cursor-pointer hover:text-white transition">
+                Funding Opportunities
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 text-sm sm:text-base font-medium">Contact us</h4>
+            <h4 className="mb-4 text-sm sm:text-base font-medium">
+              Contact us
+            </h4>
             <div className="space-y-4 text-sm text-white/70">
               <div className="flex items-center gap-3">
                 <Mail size={18} />

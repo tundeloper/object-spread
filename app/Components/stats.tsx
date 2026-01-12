@@ -1,3 +1,7 @@
+import Image from "next/image";
+import grads from "@/app/assets/graduation-hat-and-books.png";
+import book from "@/app/assets/Open-Book.png";
+
 export default function Stats() {
   return (
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -25,8 +29,8 @@ export default function Stats() {
         {/* Middle Column */}
         <div className="flex flex-col gap-6">
           {/* Card 2 */}
-          <div className="rounded-2xl p-6 text-white bg-linear-to-br from-purple-400 to-purple-600 min-h-[130px]">
-            <div className="text-2xl mb-2">🎓</div>
+          <div className="rounded-2xl p-6 text-white bg-linear-to-br from-[#E196FB] to-[#9848FF] min-h-32.5">
+            <Image src={grads} alt="Mentor" width={40} height={40} />
             <h2 className="text-2xl sm:text-3xl font-bold">60+</h2>
             <p className="font-semibold mt-1 text-sm sm:text-base">Active Mentors</p>
             <p className="text-sm text-white/80 mt-2">
@@ -35,8 +39,10 @@ export default function Stats() {
           </div>
 
           {/* Card 3 */}
-          <div className="rounded-2xl p-6 text-white bg-linear-to-br from-purple-600 to-[#614FD6] min-h-[130px]">
-            <div className="text-2xl mb-2">📚</div>
+          <div className="rounded-2xl p-6 text-white bg-linear-to-br from-[#9848FF] to-[#614FD6] min-h-32.5">
+            {/* <div className="text-2xl mb-2">📚</div> */}
+            <Image src={book} alt="Book" width={40} height={40} />
+
             <h2 className="text-2xl sm:text-3xl font-bold">45+</h2>
             <p className="font-semibold mt-1 text-sm sm:text-base">Published Research</p>
             <p className="text-sm text-white/80 mt-2">

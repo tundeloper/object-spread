@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 export default function Features() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -24,7 +26,7 @@ export default function Features() {
             href="#"
             className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-purple-600 font-medium hover:gap-3 transition-all min-h-[44px] py-2"
           >
-            Join a Cohort <span>→</span>
+            Join a Cohort <span><ArrowRight/></span>
           </a>
         </div>
 
@@ -50,7 +52,7 @@ export default function Features() {
             href="#"
             className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-purple-600 font-medium hover:gap-3 transition-all min-h-[44px] py-2"
           >
-            Get a Mentor <span>→</span>
+            Get a Mentor <span><ArrowRight/></span>
           </a>
         </div>
 
@@ -76,7 +78,7 @@ export default function Features() {
             href="#"
             className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-purple-600 font-medium hover:gap-3 transition-all min-h-[44px] py-2"
           >
-            Seek Publishing Support <span>→</span>
+            Seek Publishing Support <span><ArrowRight/></span>
           </a>
         </div>
 
@@ -102,7 +104,7 @@ export default function Features() {
             href="#"
             className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-purple-600 font-medium hover:gap-3 transition-all min-h-[44px] py-2"
           >
-            Access Funding <span>→</span>
+            Access Funding <span><ArrowRight/></span>
           </a>
         </div>
 

@@ -11,6 +11,7 @@ import sportlight from "@/app/assets/spotlight.jpg";
 import Discoveries from "./Components/Discoveries/discoveries";
 import ResearchCTA from "./Components/ReserchCTA";
 import Footer from "./Components/footer";
+import JoinSection from "./Components/Join";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -96,10 +97,22 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       <div className="hidden relative max-w-8xl mx-auto -mb-45 h-100 w-full lg:block">
-      <Image src="/publications.svg"  height={200} width={200} alt="pattern" className="absolute bottom-35 left-7 w-auto h-auto z-10 pointer-events-none" />
-      <Image src="/research.svg"  height={200} width={200} alt="pattern" className="absolute bottom-10 right-7 w-auto h-auto z-20 pointer-events-none" />
+        <Image
+          src="/publications.svg"
+          height={200}
+          width={200}
+          alt="pattern"
+          className="absolute bottom-35 left-7 w-auto h-auto z-10 pointer-events-none"
+        />
+        <Image
+          src="/research.svg"
+          height={200}
+          width={200}
+          alt="pattern"
+          className="absolute bottom-10 right-7 w-auto h-auto z-20 pointer-events-none"
+        />
       </div>
 
       {/* Content Section */}
@@ -174,21 +187,57 @@ export default function Home() {
           <Features />
           <div className="bg-[#05051B] max-w-7xl mx-auto p-4 sm:p-6 lg:p-12 rounded-3xl">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-4 sm:mb-6">
-              Research Spotlight
-            </h1>
-            <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-6">
+              Research Spotlight{" "}
               <Image
-                src={sportlight}
-                alt="spotlight"
-                className="w-full lg:w-1/2 rounded-lg object-cover"
+                src="/wi_stars.svg"
+                width={100}
+                height={100}
+                alt="wi-star"
+                className="inline-block w-12 h-auto ml-2 mb-1"
               />
+            </h1>
+            <div className="flex relative flex-col lg:flex-row justify-between gap-4 lg:gap-6">
+                <Image
+                  src={'/rectangle-shadow.svg'}
+                  width={400}
+                  height={300}
+                  alt="spotlight"
+                  className="absolute -top-16 left-0 lg:top-0 z-10 w-full lg:w-1/2 rounded-lg object-cover"
+                />
+                <Image
+                  src={'/rectangle-shadow.svg'}
+                  width={400}
+                  height={300}
+                  alt="spotlight"
+                  className="absolute top-[-.1rem] lg:top-40 left-0 z-10 w-full lg:w-1/2 rounded-lg object-cover"
+                />
+              {/* <div className="relative w-full lg:w-1/2"> */}
+                <Image
+                  src={sportlight}
+                  alt="spotlight"
+                  className="w-full lg:w-1/2 rounded-lg object-cover"
+                />
+              {/* </div> */}
               <div className="w-full lg:w-1/2">
                 <h1 className="text-white text-xl sm:text-2xl font-medium">
                   Pathways to sustainable agriculture in Africa: The role of
                   natural resources, renewable energy, and technological
                   innovation
                 </h1>
-                <p className="text-gray-400 my-4">Nov. 2025</p>
+                <p className="text-gray-400 my-3 ">Nov. 2025</p>
+                <div className="flex items-center gap-2 mb-3 border-b-2 border-dotted border-[#4E4E77] pb-3   ">
+                  <div className="w-7 h-7 rounded-full overflow-hidden">
+                    <Image
+                      src={"/images/user.jpg"}
+                      alt={"user"}
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <span className="text-sm text-white">
+                    Nazir Muhammad Abdullahi
+                  </span>
+                </div>
                 <p className="text-white mb-5">
                   Agriculture is a significant contributor to greenhouse gas
                   emissions (GHGEs) in Africa, a region highly vulnerable to the
@@ -208,6 +257,7 @@ export default function Home() {
             </div>
           </div>
           <Discoveries />
+          <JoinSection />
           <ResearchCTA />
           <Footer />
         </div>
