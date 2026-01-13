@@ -10,7 +10,7 @@ const ResearchCTA = () => {
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20" />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-[420px] sm:min-h-[480px] lg:min-h-[560px] flex-col items-center justify-center px-4 sm:px-6 text-center">
+      <div className="relative z-10 flex min-h-105 sm:min-h-120 lg:min-h-140 flex-col items-center justify-center px-4 sm:px-6 text-center">
         <h1 className="max-w-full sm:max-w-2xl lg:max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-white">
           Ready to begin your research <br className="hidden md:block" />
           journey?
