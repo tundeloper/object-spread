@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import objectSpred from "@/app/assets/object spread.png";
-import logoImg from "@/app/assets/logo.png";
 import { useEffect, useRef } from "react";
 import rect from "@/app/assets/Rectangle shadow.svg";
 import IconButton from "./Components/customs/icon-button";

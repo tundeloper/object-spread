@@ -1,40 +1,9 @@
-"use client"
-import { useEffect, useRef } from 'react'
 import IconButton from './customs/icon-button';
 import Image from 'next/image';
 import logoImg from "@/app/assets/logo.png";
 
 
 export default function Hero() {
-    const containerRef = useRef<HTMLDivElement>(null);
-      useEffect(() => {
-        const container = containerRef.current;
-        if (!container) return;
-    
-        const DOT_COUNT = 800;
-        const DOT_SIZE = 1.41;
-    
-        for (let i = 0; i < DOT_COUNT; i++) {
-          const dot = document.createElement("span");
-    
-          dot.style.position = "absolute";
-          dot.style.width = `${DOT_SIZE}px`;
-          dot.style.height = `${DOT_SIZE}px`;
-          dot.style.backgroundColor = "#FFFFFF";
-          dot.style.borderRadius = "100%";
-    
-          dot.style.left = `${
-            Math.random() * (container.clientWidth - DOT_SIZE)
-          }px`;
-          dot.style.top = `${
-            Math.random() * (container.clientHeight - DOT_SIZE)
-          }px`;
-    
-          dot.style.opacity = `${Math.random() * 0.6 + 0.2}`; // subtle variation
-    
-          container.appendChild(dot);
-        }
-      }, []);
   return (
     <section className="overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 sm:py-20 lg:py-32 relative z-10">

@@ -27,7 +27,7 @@ export default function JoinSection() {
   ];
 
   return (
-    <section className="w-full py-20 flex flex-col items-center text-center px-6">
+    <section className="w-full py-7 flex flex-col items-center text-center px-6">
       {/* Header */}
       <h2 className="text-3xl font-semibold text-[#05051B] tracking-tight">
         Join the Movement
